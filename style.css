@@ -1,0 +1,53 @@
+.hero {
+    text-align: center;
+    text-decoration-style: solid;
+}
+
+header {
+    display: flex;
+    background-color: rgb(49, 54, 71);
+}
+
+ul {
+    display: flex;
+    margin: solid;
+    color: white;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 16px;
+    border-left: solid white;
+}
+
+span {
+    width: 100%;
+}
+
+.about, .events-articles {
+    display: flex;
+}
+
+.events-h2 {
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    text-align: center;
+}
+
+.form-div {
+    margin-top: 12px;
+}
+
+button {
+    width: 200px;
+    margin-top: 12px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
