@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <p><img src="media/logo.png" alt="logo" width="100px"></p>
+    <header class="header">
+        <img src="media/logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events & News</a></li>
-                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#hero" class="nav-links">Home</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
+                <li><a href="#events" class="nav-links">Events & News</a></li>
+                <li><a href="#reservations" class="nav-links">Reservations</a></li>
             </ul>
         </nav>
     </header>
@@ -22,99 +29,109 @@
     <main>
 
         <section class="hero" id="hero">
+            <img class="hero-image" src="media/home-image.png" alt="">
             <h1>Five Senses Restaurant</h1>
-            <p>Where flavors transcend and souls flourish</p>
-            <span><img src="media/home-image.png" alt=""></span>
-
         </section>
+        <br>
 
         <section class="about" id="about">
-            <div>
-                <h2>Experience the Fusion</h2>
-                <p>
-                    Five Senses Restaurant is a family-run casual fine dining restaurant situated on 2nd Floor Galana Plaza along Galana Road in Kilimani Area, Nairobi. Its ambience boasts contemporary décor of stone-clad pillars, indoor plants, a pergola for an airy outdoor feel, unique art pieces in the softly lighted dining area and background music creating a relaxed mood.
-                </p>
-                <p>
-                    We serve Lunch and Dinner and our well stocked bar offers a wide range of wines, spirits, crafted cocktails, beer and non-alcoholic beverages. The private and cozy dining area is good for office and client meetings, romantic date-nights, birthdays, anniversaries or casual meet-ups. The bar opens for drinks & beverages from 11 am and for refreshing cocktails from 3pm to 7pm, Monday to Saturday.
-                </p>
-                <p>
-                    Our ala carte Menu has unique dishes created by our executive Chef, Chef Kim who draws inspiration through experimenting with different ingredients sourced from the diverse Kenyan landscapes to exotic ones that have found their place on Kenyans’ plates. Chef Kim spends a lot of time identifying fresh, safe, locally sourced ingredients for use in his recipes and employs French techniques of cooking to elevate food taste and flavor.
-                </p>
-            </div>
-            <img src="media/about-image.png" alt="Chef preparing food">
-        </section>
+            <h2>Experience the Fusion</h2>
 
-        <section class="events">
-            <h2 class="events-h2">Events And News</h2>
-            <div class="events-articles">
-                <article>
-                    <h3>Good France</h3>
-                    <p>Chef Kim Takes us through the preparations of the Good France dinner at the 5 Senses Restaurant.</p>
-                </article>
-                <article>
-                    <h3>KTN Interview</h3>
-                    <p>French Cuisine with the finest Moet and Chandon Champagne.</p>
-                </article>
-                <article>
-                    <h3>The cookoff with Jason Muno</h3>
-                    <p>Jason and chef Kim of 5 Senses Restaurant made some white snapper werved with bok choy.</p>
-                </article>
+            <div class="about-div">
+                <div class="about-contents">
+                    <p>
+                        Five Senses Restaurant is a family-run casual fine dining restaurant situated on 2nd Floor
+                        Galana Plaza along Galana Road in Kilimani Area, Nairobi. Its ambience boasts contemporary décor
+                        of stone-clad pillars, indoor plants, a pergola for an airy outdoor feel, unique art pieces in
+                        the softly lighted dining area and background music creating a relaxed mood.
+                    </p>
+                    <p>
+                        We serve Lunch and Dinner and our well stocked bar offers a wide range of wines, spirits,
+                        crafted cocktails, beer and non-alcoholic beverages. The private and cozy dining area is good
+                        for office and client meetings, romantic date-nights, birthdays, anniversaries or casual
+                        meet-ups. The bar opens for drinks & beverages from 11 am and for refreshing cocktails from 3pm
+                        to 7pm, Monday to Saturday.
+                    </p>
+                    <p>
+                        Our ala carte Menu has unique dishes created by our executive Chef, Chef Kim who draws
+                        inspiration through experimenting with different ingredients sourced from the diverse Kenyan
+                        landscapes to exotic ones that have found their place on Kenyans’ plates. Chef Kim spends a lot
+                        of time identifying fresh, safe, locally sourced ingredients for use in his recipes and employs
+                        French techniques of cooking to elevate food taste and flavor.
+                    </p>
+                </div>
+                <img src="media/about-image.png" alt="Chef preparing food">
             </div>
         </section>
 
-        <section class="reservations">
-            <form action="#" method="post">
-                <h3>Reservations</h3>
-                <fieldset>
-                    <legend>Make a reservation</legend>
-
-                    <div class="form-div">
-                        <label for="date">Date</label>
-                        <input type="date" name="date" id="date" required>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="time">Time</label>
-                        <select name="time" id="time" required>
-                            <option value="reservation-time">11.00am - 12.00pm</option>
-                            <option value="reservation-time">12.00pm - 1.00pm</option>
-                            <option value="reservation-time">1.00pm - 2.00pm</option>
-                            <option value="reservation-time">2.00pm - 3.00pm</option>
-                            <option value="reservation-time">3.00pm - 4.00pm</option>
-                            <option value="reservation-time">4.00pm - 5.00pm</option>
-                            <option value="reservation-time">6.00pm - 7.00pm</option>
-                        </select>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="party-number">Party</label>
-                        <input type="number" name="party-number" id="party-number" required>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="full-name">Name</label>
-                        <input type="text" name="full-name" id="full-name" required>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="email">Email Addres</label>
-                        <input type="email" name="email" id="email"required>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" required>
-                    </div>
-
-                    <div class="form-div">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"rows="7" required></textarea>
-                    </div>
-
-                    <button type="submit">Book a Table</button>
-                </fieldset>
-            </form>
-        </section>
+        <div class="events-reservations">
+            <section class="events">
+                <h2 class="events-h2">Events And News</h2>
+                <div class="events-articles">
+                    <article>
+                        <img src="media/good-france.png" alt="Good France">
+                        <h3>Good France</h3>
+                        <p>Chef Kim Takes us through the preparations of the Good France dinner at the 5 Senses Restaurant.
+                        </p>
+                    </article>
+                    <article>
+                        <img src="media/ktn-interview.png" alt="KTN Interview">
+                        <h3>KTN Interview</h3>
+                        <p>French Cuisine with the finest Moet and Chandon Champagne.</p>
+                    </article>
+                    <article>
+                        <img src="media/cookoff.png" alt="Cookoff with Jason Muno">
+                        <h3>The cookoff with Jason Muno</h3>
+                        <p>Jason and chef Kim of 5 Senses Restaurant made some white snapper werved with bok choy.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="reservations">
+                <form action="#" method="post">
+                    <h2>Reservations</h2>
+                    <fieldset>
+                        <legend>Make a reservation</legend>
+                        <div class="form-div">
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="time">Time</label>
+                            <select name="time" id="time" required>
+                                <option value="reservation-time">11.00am - 12.00pm</option>
+                                <option value="reservation-time">12.00pm - 1.00pm</option>
+                                <option value="reservation-time">1.00pm - 2.00pm</option>
+                                <option value="reservation-time">2.00pm - 3.00pm</option>
+                                <option value="reservation-time">3.00pm - 4.00pm</option>
+                                <option value="reservation-time">4.00pm - 5.00pm</option>
+                                <option value="reservation-time">6.00pm - 7.00pm</option>
+                            </select>
+                        </div>
+                        <div class="form-div">
+                            <label for="party-number">Party</label>
+                            <input type="number" name="party-number" id="party-number" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="full-name">Name</label>
+                            <input type="text" name="full-name" id="full-name" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="email">Email Addres</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-div">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="7" required></textarea>
+                        </div>
+                        <button type="submit">Book a Table</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
     </main>
 
     <aside>
@@ -135,4 +152,5 @@
 
 
 </body>
+
 </html>

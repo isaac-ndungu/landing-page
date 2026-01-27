@@ -1,29 +1,122 @@
-.hero {
-    text-align: center;
-    font-weight: bolder;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-header {
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    color: beige;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.header img {
+    width: 100px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.786);
     display: flex;
-    background-color: rgb(49, 54, 71);
+    justify-content: space-around;
+    padding: 10px 30px; 
+    height: 50px;
+}
+
+nav {
+    width: 30%;
 }
 
 ul {
     display: flex;
-    color: white;
     list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-li {
-    margin-left: 16px;
-    border-left: solid white;
-    padding: 12px;
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
 }
 
-span {
-    width: 100%;
+.nav-links:hover {
+    display: inline-block;
+    color: black;
+    border-radius: 30px;
 }
+
+.about-div {
+    display: flex;
+    left: 50%;
+    align-items: center;
+    padding: 50px 20px;
+    justify-content: space-around;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: xx-large;      
+}
+
+.about img {
+    width: 40%;
+}
+
+.about .about-contents {
+    width: 50%;
+}
+
+.about-contents p {
+    line-height: 40px;
+    font-weight: 700;
+    opacity: 0.6;
+    font-family: "Ubuntu", sans-serif;
+}
+.events-articles {
+    text-align: center;
+    display: flex;
+    padding: 40px;
+    color: white;
+}
+.events-articles article img {
+    height: 200px;
+}
+
+.events-h2 {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.events-reservations {
+    background-color: rgba(0, 0, 0, 0.736);
+    margin-top: 24px;
+    padding: 24px;
+}
+
+.events-articles article {
+    width: 30%;
+}
+
+aside {
+    display: flex;
+    justify-content: space-around;
+}
+
+ /*
 
 .about, .events-articles {
     display: flex;
@@ -52,4 +145,4 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
-}
+} */
