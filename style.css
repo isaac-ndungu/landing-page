@@ -29,7 +29,7 @@ body {
     background-color: rgba(0, 0, 0, 0.786);
     display: flex;
     justify-content: space-around;
-    padding: 10px 30px; 
+    padding: 10px 30px;
     height: 50px;
 }
 
@@ -67,7 +67,7 @@ a {
 .about h2 {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
-    font-size: xx-large;      
+    font-size: xx-large;
 }
 
 .about img {
@@ -84,17 +84,19 @@ a {
     opacity: 0.6;
     font-family: "Ubuntu", sans-serif;
 }
+
 .events-articles {
     text-align: center;
     display: flex;
     padding: 40px;
     color: white;
 }
+
 .events-articles article img {
     height: 200px;
 }
 
-.events-h2 {
+.events-h2{
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     font-size: xx-large;
@@ -113,36 +115,56 @@ a {
 
 aside {
     display: flex;
-    justify-content: space-around;
-}
-
- /*
-
-.about, .events-articles {
-    display: flex;
-}
-
-.events-h2 {
-    text-align: center;
-}
-
-aside {
-    display: flex;
-    text-align: center;
     justify-content: space-evenly;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.reservations {
+    display: grid;
+    place-items: center;
+    color: Black;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.reservations form h2 {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: xx-large;
+}
+
+form {
+    width: 600px;
+    background-color: gray;
+
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 10px;
 }
 
 .form-div {
-    margin-top: 12px;
+    padding: 8px;
+    margin: 4px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
 }
 
 button {
-    width: 200px;
-    margin-top: 12px;
+    width: 100%;
+    padding: 10px; 
+    text-align: center;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     background-color: black;
     color: white;
-} */
+    height: 50px;
+}
